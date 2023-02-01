@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Who should {{data.user.name}} not be a Secret Santa for?</h1>
+<div mat-dialog-content>
+    <mat-list>
+        <mat-list-item *ngFor="let i = index; let user of users" class="row">
+            <mat-checkbox [checked]="checked(user)" (change)="onChange($event.checked, user, i)">{{user.name}}</mat-checkbox>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</div>
+<div mat-dialog-actions>
+  <button mat-button [mat-dialog-close]="this.data.user.excludeUsers" cdkFocusInitial>Done</button>
+</div>

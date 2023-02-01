@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+app-new-secret-santa .new-secret-santa-container{
+  margin-top: 20px;
+}
+
+mat-toolbar h1, a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+  }
